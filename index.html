@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drowsiness Detection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .rounded-circle {
+      object-fit: cover;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5 justify-content-center text-center">
+      <!-- First Column -->
+      <div class="col-lg-4">
+        <img src="../static/assets/pic1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Dozed Off">
+        <h2>Dozed Off</h2>
+        <p><b>"Sleep is such a powerful drive," said Dr. Meir Kryger of the Yale Sleep Medicine Clinic in New Haven, Conn. "If you need it, the brain will say 'Sleep' and that can be an incredibly dangerous situation."</b></p>
+      </div>
+
+      <!-- Second Column -->
+      <div class="col-lg-4">
+        <img src="../static/assets/pic2.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Damage Caused">
+        <h2>Damage Caused</h2>
+        <p><b>Drowsy driving is a problem in India, and it can be especially dangerous when it involves truck drivers. In most drowsy driving cases, the driver gets behind the wheel without having gotten enough sleep. This combination of driving and fatigue can lead to catastrophic results.</b></p>
+      </div>
+
+      <!-- Third Column -->
+      <div class="col-lg-4">
+        <img src="../static/assets/pic3.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Preventive Measures">
+        <h2>Preventive Measures</h2>
+        <p><b>Get enough sleep. Take naps and breaks. If you do get tired behind the wheel, the most effective thing you can do is pull over. Avoid dangerous methods to keep yourself awake. Many misconceptions exist in terms of ways to keep yourself awake. Drowsy driving injures and kills thousands of people every year.</b></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <a href="{{ url_for('static', filename='about.html') }}" class="btn btn-outline-warning btn-lg mt-3" style="text-decoration: none;">Let's Start</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
